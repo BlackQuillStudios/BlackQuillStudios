@@ -1,0 +1,170 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-left: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+.left-header, .right-header {
+    flex: 1;
+}
+
+#blackquill {
+    margin-top: 5%;
+    margin-left: 200px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#studios {
+    margin-top: 5%;
+    margin-right: 305px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #000000;
+}
+
+main {
+    padding: 20px;
+}
+
+.line {
+    margin-left: 5%;
+    width: 90%;
+    height: 5px;
+    background-color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 300;
+}
+
+.social-icons {
+    position: fixed;
+    top: 360px;
+    left: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 50px;
+    margin-left: 20px;
+    text-decoration: none;
+    border: 5px solid #000000;
+    padding: 8px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    border-color: #000000;
+    color: #000000;
+}
+
+.description {
+    text-align: center;
+    margin: auto; /* Set margin to create space around the description */
+    max-width: 700px; /* Set a maximum width for the description */
+}
+
+.description p {
+    margin-top: 130px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Sidebar Styles */
+
+.container {
+    position: relative;
+}
+
+.sidebar a.active {
+    font-weight: bold; /* Adjust the weight as needed */
+    font-size: 36px;
+    font-display: u;
+}
+
+.sidebar-toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2; /* Ensure the button appears above the sidebar */
+    transition: transform 0.5s ease; /* Add a transition for smooth rotation */
+}
+
+.sidebar-toggle-btn.open {
+    transform: rotate(90deg); /* Rotate the button 90 degrees when open */
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-right: 5px solid #000000; /* Add a black line on the right side of the sidebar */
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    transform: scale(1.2);
+    font-size: 36px;
+    font-weight: bold;
+}
